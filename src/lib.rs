@@ -1,0 +1,3 @@
+//! `choroi`
+//!
+//! Reserved crate.

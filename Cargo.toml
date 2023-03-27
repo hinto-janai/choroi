@@ -1,0 +1,30 @@
+[package]
+name = "choroi"
+version = "0.0.0"
+edition = "2021"
+authors = ["hinto.janai <hinto.janai@protonmail.com>"]
+description = "choroi"
+documentation = "https://docs.rs/choroi"
+repository = "https://github.com/hinto-janai/choroi"
+readme = "README.md"
+keywords = ["choroi"]
+license = "MIT"
+
+[profile.release]
+debug = false
+strip = "symbols"
+codegen-units = 1
+lto = true
+
+# Run tests in `--release` mode.
+#[profile.test]
+#debug = false
+#strip = "symbols"
+#codegen-units = 1
+#lto = true
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+
